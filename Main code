@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>НейроЦентр - все нейронки на одном ссайте</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f4faff;
+      color: #222;
+      overflow-x: hidden;
+    }
+
+    header {
+      background: #00c2ff;
+      color: white;
+      padding: 20px 40px;
+      font-size: 24px;
+      font-weight: bold;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    /* Новый верхний блок */
+    section {
+      background: linear-gradient(135deg, #00c2ff, #0077ff);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+      position: relative;
+    }
+
+    section img {
+      width: 100px;
+      height: 100px;
+      object-fit: contain;
+      margin-bottom: 20px;
+    }
+
+    section h1 {
+      margin: 0;
+      font-size: 36px;
+    }
+
+    section p {
+      font-size: 18px;
+      margin-top: 10px;
+    }
+
+    main {
+      padding: 40px 20px;
+      max-width: 1400px;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      position: relative;
+    }
+
+    .card {
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+      padding: 30px;
+      width: 260px;
+      text-align: center;
+      transition: transform 0.3s ease;
+      z-index: 1;
+    }
+
+    .card img {
+      width: 80px;
+      height: 80px;
+      object-fit: contain;
+      margin-bottom: 10px;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .btn {
+      background: #00c2ff;
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 15px;
+    }
+
+    .btn:hover {
+      background: #00a9e0;
+    }
+
+    .description {
+      font-size: 14px;
+      color: #555;
+      margin-top: 10px;
+    }
+
+    .shape {
+      position: absolute;
+      border-radius: 50%;
+      opacity: 0.15;
+      z-index: 0;
+    }
+
+    .shape1 {
+      width: 200px;
+      height: 200px;
+      background: #00c2ff;
+      top: -60px;
+      left: -60px;
+    }
+
+    .shape2 {
+      width: 150px;
+      height: 150px;
+      background: #ffcb00;
+      bottom: -40px;
+      right: 50px;
+    }
+
+    .shape3 {
+      width: 120px;
+      height: 120px;
+      background: #a1ffce;
+      top: 200px;
+      right: -60px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      color: #666;
+    }
+
+    .qr {
+      display: block;
+      margin: 40px auto 0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>НейроЦентр - все нейронки на одном ссайте</header>
+
+  <!-- Новый верхний блок -->
+  <section>
+    <img src="https://cdn-icons-png.flaticon.com/512/4712/4712107.png" alt="AI logo">
+    <h1>Все нейросети в одном месте</h1>
+    <p>Найди подходящий ИИ-инструмент по ссылке</p>
+  </section>
+
+  <main>
+    <div class="shape shape1"></div>
+    <div class="shape shape2"></div>
+    <div class="shape shape3"></div>
+
+    <!-- Карточки нейросетей -->
+    <div class="card">
+      <img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" alt="Hugging Face">
+      <h3>Hugging Face</h3>
+      <a href="https://huggingface.co/" class="btn" target="_blank">Перейти</a>
+      <div class="description">(Доступ к множеству моделей ИИ, включая BLOOM и другие)</div>
+    </div>
+    <div class="card">
+      <img src="https://openart.ai/static/media/logo-icon.9ef618fd.svg" alt="OpenArt">
+      <h3>OpenArt</h3>
+      <a href="https://openart.ai/" class="btn" target="_blank">Перейти</a>
+      <div class="description">(Генерация изображений на основе текста)</div>
+    </div>
+    <div class="card">
+      <img src="https://playgroundai.com/favicon.ico" alt="Playground AI">
+      <h3>Playground AI</h3>
+      <a href="https://playgroundai.com/" class="btn" target="_blank">Перейти</a>
+      <div class="description">(Редактирование и генерация изображений с помощью ИИ)</div>
+    </div>
+    <div class="card">
+      <img src="https://leonardo.ai/favicon.ico" alt="Leonardo AI">
+      <h3>Leonardo AI</h3>
+      <a href="https://leonardo.ai/" class="btn" target="_blank">Перейти</a>
+      <div class="description">(Создание артов, дизайна, персонажей и концепт-арта)</div>
+    </div>
+    <div class="card">
+      <img src="https://runwayml.com/favicon.ico" alt="RunwayML">
+      <h3>Runway ML</h3>
+      <a href="https://runwayml.com/" class="btn" target="_blank">Перейти</a>
+      <div class="description">(Редактирование видео, генерация и AI-композиция)</div>
+    </div>
+    <div class="card">
+      <img src="https://www.pixray.gob.io/favicon.ico" alt="Pixray">
+      <h3>Pixray</h3>
+      <a href="https://pixray.gob.io/" class="btn" target="_blank">Перейти</a>
+      <div class="description">(Генерация изображений на базе текста и параметров)</div>
+    </div>
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/e/e9/DeepL_logo.svg" alt="DeepL">
+      <h3>DeepL</h3>
+      <a href="https://www.deepl.com/" class="btn" target="_blank">Перейти</a>
+      <div class="description">(Перевод текста с помощью ИИ)</div>
+    </div>
+    <div class="card">
+      <img src="https://openai.com/favicon.ico" alt="ChatGPT">
+      <h3>ChatGPT</h3>
+      <a href="https://chat.openai.com/" class="btn" target="_blank">Перейти</a>
+      <div class="description">(Чат-бот для общения с ИИ, поддерживает разговоры на различные темы)</div>
+    </div>
+    <div class="card">
+      <img src="https://www.midjourney.com/favicon.ico" alt="MidJourney">
+      <h3>MidJourney</h3>
+      <a href="https://www.midjourney.com/" class="btn" target="_blank">Перейти</a>
+      <div class="description">(Генерация изображений с помощью ИИ)</div>
+    </div>
+    <div class="card">
+      <img src="https://logo.clearbit.com/dreamstudio.ai" alt="DreamStudio">
+      <h3>DreamStudio</h3>
+      <a href="https://beta.dreamstudio.ai/" class="btn" target="_blank">Перейти</a>
+      <div class="description">(Генерация изображений с помощью текстовых подсказок)</div>
+    </div>
+    <div class="card">
+      <img src="https://replika.ai/favicon.ico" alt="Replika">
+      <h3>Replika</h3>
+      <a href="https://replika.ai/" class="btn" target="_blank">Перейти</a>
+      <div class="description">(Персональный чат-бот, который учится понимать твои эмоции)</div>
+    </div>
+  </main>
+
+  <div class="qr">
+    <p>Перейти на сайт по QR-коду:</p>
+    <p><a href="https://neirosenter.com" target="_blank">https://neirosenter.com</a></p>
+    <img src="https://api.qrserver.com/v1/create-qr-code/?data=https%3A%2F%2Fneirosenter.com&size=150x150" alt="QR Code" width="150">
+  </div>
+
+  <footer>© 2025 Сборник нейросетей. Стиль: Deepseek Inspired</footer>
+</body>
+</html>
